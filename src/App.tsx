@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Component1 from './component/Component1'
 import Component2 from './component/Component2'
-import Component3 from './component/Component3'
 
 
 class App extends React.Component<any> {
