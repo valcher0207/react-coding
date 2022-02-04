@@ -1,4 +1,5 @@
 import React from 'react';
+import Component3 from './Component3';
 
 interface IState {
     counter: any;
@@ -30,6 +31,13 @@ class Component2 extends React.Component<any, IState> {
                 <button type="button" onClick={this.handleEventClick}>
                     click me
                 </button>
+                <div>
+                    {this.state.counter % 3 == 0 && this.state.counter !== 0 ? (
+                        <Component3/>
+                    ) : (
+                        null
+                    )}
+                </div>
             </div>
         )
     }
